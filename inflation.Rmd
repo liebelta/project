@@ -65,9 +65,6 @@ with(mtcars, plot(hp, mpg))
 Inline code is for single numbers/short text:
 We have 32 cars.
 
-```{python}
-print("Hello World! Python here, do you miss R already?")
-```
 
 ```{r}
 # use a function without loading the package:
@@ -79,5 +76,19 @@ usethis::use_git_config(
 
 usethis::use_git()
 
+```
+
+```{r}
+usethis::create_github_token(description = "Token for Repro Workshop 2023 Test")
+```
+
+```{r}
+gitcreds::gitcreds_set() # <-- Token must *not* go into brackets, paste when asked
+```
+```{r}
+usethis::use_github()
+```
+```{r}
+repro::automate()
 ```
 
