@@ -50,6 +50,10 @@ inflation %>%
   ungroup() %>% 
   ggplot() +
   geom_line(aes(date, value, color = name)) +
+  theme_minimal() +
+  ylab("subjective inflation in %-points") +
+  labs(color = "") +
+  theme(legend.position = c(.1, .9)) +
   NULL
 ```
 
@@ -65,6 +69,7 @@ We have 32 cars.
 print("Hello World! Python here, do you miss R already?")
 ```
 
+```{r}
 # use a function without loading the package:
 # package::function
 usethis::use_git_config(
@@ -73,3 +78,6 @@ usethis::use_git_config(
   init.defaultBranch = "main") # <-- not necessary but kinder than 'master'
 
 usethis::use_git()
+
+```
+
