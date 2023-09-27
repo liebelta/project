@@ -79,28 +79,28 @@ usethis::use_git()
 ```
 
 ```{r}
-usethis::create_github_token(description = "Token for Repro Workshop 2023 Test 2")
+#usethis::create_github_token(description = "Token for Repro Workshop 2023 Test 2")
 ```
 
 ```{r}
-gitcreds::gitcreds_set() # <-- Token must *not* go into brackets, paste when asked
+#gitcreds::gitcreds_set() # <-- Token must *not* go into brackets, paste when asked
 ```
 ```{r}
-usethis::use_github()
+#usethis::use_github()
 ```
 ```{r}
-repro::automate()
+#repro::automate()
 ```
 ```{r}
-repro::use_gha_docker()
+#repro::use_gha_docker()
 ```
 ```{r}
-usethis::browse_github_actions()
+#usethis::browse_github_actions()
 ```
 ```{r}
-repro::use_make_publish()
+#repro::use_make_publish()
 ```
 ```{r}
-repro::use_gha_publish()
+#repro::use_gha_publish()
 ```
 
