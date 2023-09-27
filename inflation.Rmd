@@ -3,8 +3,8 @@ title: "Inflation Data"
 author: "Aaron Peikert"
 date: "`r Sys.Date()`"
 output:
-  html_document: default
   pdf_document: default
+  html_document: default
 repro:
   packages:
   - here
@@ -93,5 +93,14 @@ repro::automate()
 ```
 ```{r}
 repro::use_gha_docker()
+```
+```{r}
+usethis::browse_github_actions()
+```
+```{r}
+repro::use_make_publish()
+```
+```{r}
+repro::use_gha_publish()
 ```
 
