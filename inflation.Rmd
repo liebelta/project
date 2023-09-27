@@ -79,7 +79,7 @@ usethis::use_git()
 ```
 
 ```{r}
-usethis::create_github_token(description = "Token for Repro Workshop 2023 Test")
+usethis::create_github_token(description = "Token for Repro Workshop 2023 Test 2")
 ```
 
 ```{r}
